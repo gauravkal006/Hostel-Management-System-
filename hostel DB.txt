@@ -1,0 +1,88 @@
+CREATE DATABASE hostel;
+CREATE TABLE Employee (
+    mobileNo VARCHAR(15) PRIMARY KEY,
+    name VARCHAR(50),
+    father VARCHAR(50),
+    mother VARCHAR(50),
+    email VARCHAR(50),
+    address VARCHAR(100),
+    aadhar VARCHAR(20),
+    designation VARCHAR(50),
+    status VARCHAR(20)
+);
+INSERT INTO EmployeeDetails (mobileNo, name, father, mother, email, address, aadhar, designation, status) 
+VALUES 
+('8282828282', 'Amay Sharma', 'Anil Sharma', 'Vidya', 'amay@123', 'Surat, Gujarat', '627262720987l', 'Purchasing and Inventory Control', 'Working'),
+('8989898989', 'Aanand Tivari', 'Peyush Tivari', 'Pushpa', 'Aanand@999', 'Patna, Bihar', '898074846833', 'HouseKeeping', 'Working'),
+('9595959595', 'Radhika Merchant', 'Viren Merchant', 'Shaila', 'radhika@123', 'Mumbai, Maharashtra', '909087876565', 'Accounting and Budgeting', 'Working'),
+('9797979797', 'disha', 'gajanan', 'usha', 'disha@123', 'Amravati', '1234567890', 'Maintenance', 'Working');
+
+
+
+
+******************************************************************
+CREATE TABLE Payment (
+    mobileNo VARCHAR(15),
+    month VARCHAR(20),
+    amount DECIMAL(10, 2)
+);
+
+INSERT INTO Payment (mobileNo, month, amount) 
+VALUES 
+('8989898989', 'Apr-2023', 10000),
+('8989898989', 'Apr-2023', 10000),
+('8668974533', 'Apr-2024', 10000);
+
+
+*************************************************************************
+CREATE TABLE Student (
+    mobileNo VARCHAR(15) PRIMARY KEY,
+    name VARCHAR(50),
+    father VARCHAR(50),
+    mother VARCHAR(50),
+    email VARCHAR(50),
+    address VARCHAR(100),
+    college VARCHAR(50),
+    aadhar VARCHAR(20),
+    roomNo VARCHAR(10),
+    status VARCHAR(20)
+);
+
+INSERT INTO Student (mobileNo, name, father, mother, email, address, college, aadhar, roomNo, status) 
+VALUES 
+('8371038832', 'VIVEK', 'nandkisor', 'korde', 'sarang@gamail.com', 'at , amravati', 'GPA', '1234567890', 'R-500', 'living'),
+('8989898989', 'AJAY', 'MANAV', 'Rekha', 'abc@123', 'Buldhana', 'Government poly.', '432543335252', 'R-300', 'living'),
+('9022341544', 'sneha', 'kailash', 'jyoti', 'sneha@gmail.com', 'At.amravti', 'GPAmravti', '688862671192', 'R-200', 'living'),
+('9545954595', 'Karn Agrawal', 'Vikas Agrawal', 'Isha Agrawal', 'karn@123', 'Patna,Bihar', 'IIT , Kanpur', '113311331133', 'R-100', 'living'),
+('9797979797', 'Amar Sharma', 'ajay sharma', 'ISHA shrama', 'ishasharma@gmail.com', 'Bihar', 'GPA', '253526354622', 'R-300', 'leaved');
+
+******************************************************************
+CREATE TABLE Room (
+    number VARCHAR(10) PRIMARY KEY,
+    activate VARCHAR(10),
+    roomStatus VARCHAR(20)
+);
+
+INSERT INTO Room (number, activate, roomStatus) 
+VALUES 
+('R-100', 'yes', 'Booked'),
+('R-200', 'yes', 'Booked'),
+('R-300', 'Yes', 'Booked');
+
+
+*****************************************************************************
+
+CREATE TABLE Fees (
+    mobileNo VARCHAR(15),
+    month VARCHAR(20),
+    amount DECIMAL(10, 2)
+);
+
+INSERT INTO Fees (mobileNo, month, amount) 
+VALUES 
+('9876543', 'Apr-2023', 6000),
+('9545954595', 'Apr-2023', 6000),
+('8989898989', 'Sep-2023', 6000),
+('8371038832', 'Sep-2023', 6000),
+('8371038832', 'Nov-2023', 6000),
+('7581103322', 'Apr-2024', 6000);
