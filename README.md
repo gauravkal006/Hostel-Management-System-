@@ -1,0 +1,1 @@
+In my second year of diploma, I developed a project using Java, integrated with a Database Management System (DBMS). The project aimed to streamline and automate [specific task or process] by leveraging the power of Java for front-end functionality and a DBMS for efficient data storage and management.
